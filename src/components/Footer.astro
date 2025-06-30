@@ -1,6 +1,6 @@
 ---
 import Social from "./Social.astro";
-import astroLogo from "../assets/logoicon.jpg";
+import astroLogo from "../assets/bg-nak.jpg";
 ---
 
 <style>
@@ -9,7 +9,9 @@ import astroLogo from "../assets/logoicon.jpg";
     flex-direction: column;
     margin-top: 2rem;
     padding: 2rem 3rem;
-    background: linear-gradient(135deg, #b50000, #8b0000);
+        background: linear-gradient(135deg, #101010, #8b0000);
+
+    /* background: linear-gradient(135deg, #00b533, #8b0000); */
     border-radius: 2px;
     box-shadow: 0 8px 16px rgba(181, 0, 0, 0.4);
     color: #fff;
@@ -58,13 +60,25 @@ import astroLogo from "../assets/logoicon.jpg";
     text-align: center;
     margin-top: 2rem;
     font-size: 1.1rem;
-    color: #ffb3b3;
+    color: #b6b3ff;
     font-weight: 600;
     letter-spacing: 1.5px;
   }
+  .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 25% 10%;
+
+}
 </style>
 
 <footer>
+  <div class="footer-logo">
+    <img src={astroLogo.src} alt="Footer Logo" />
+  </div>
   <div class="top-section">
     <div>
       <p>Follow Us!</p>
@@ -78,6 +92,7 @@ import astroLogo from "../assets/logoicon.jpg";
     </div>
   </div>
 
+ 
   <div class="copyright">
     <h4>Sonoma State University | EST. 92</h4>
   </div>
