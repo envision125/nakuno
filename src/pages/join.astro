@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="join-container">
+    <h1>Join The Alumni Association Now!</h1>
+    <p class="tagline">"Men of Pride, Men of Culture, Men of Mind"</p>
+
+    <form class="join-form" action="#" method="POST" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us why..." required></textarea>
+
+      <button type="submit">Join Now</button>
+    </form>
+  </main>
+
+  <style>
+    .join-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .join-container h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #b50000;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #8b0000;
+    }
+
+    .join-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .join-form label {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #b50000;
+    }
+
+    .join-form input,
+    .join-form textarea {
+      padding: 0.75rem 1rem;
+      border: 2px solid #b50000;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    .join-form input:focus,
+    .join-form textarea:focus {
+      outline: none;
+      border-color: #8b0000;
+      box-shadow: 0 0 5px rgba(181, 0, 0, 0.5);
+    }
+
+    .join-form button {
+      background-color: #b50000;
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .join-form button:hover {
+      background-color: #8b0000;
+    }
+  </style>
+</Layout>

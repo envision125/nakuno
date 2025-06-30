@@ -1,0 +1,84 @@
+---
+import Social from "./Social.astro";
+import astroLogo from "../assets/logoicon.jpg";
+---
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background: linear-gradient(135deg, #b50000, #8b0000);
+    border-radius: 2px;
+    box-shadow: 0 8px 16px rgba(181, 0, 0, 0.4);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .top-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .top-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-section p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffe6e6;
+    letter-spacing: 1.2px;
+  }
+  .top-section p.subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffd6d6;
+    margin-top: 0.3rem;
+  }
+  .top-section a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .top-section a:hover {
+    color: #ffb3b3;
+  }
+  /* .bottom-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  } */
+  .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #ffb3b3;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+</style>
+
+<footer>
+  <div class="top-section">
+    <div>
+      <p>Follow Us!</p>
+      <Social platform="instagram" username="gcaa_nak" />
+      <p class="subtitle">GACAA</p>
+    </div>
+    <div>
+      <p>Follow Us!</p>
+      <Social platform="instagram" username="sonomanak" />
+      <p class="subtitle">Undergrads</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <h4>Sonoma State University | EST. 92</h4>
+  </div>
+</footer>

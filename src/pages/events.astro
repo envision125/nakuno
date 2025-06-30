@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Events";
+---
+
+<style>
+  .events-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    color: #b60000;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    color: #b60000;
+    border-bottom: 2px solid #b60000;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .event-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  .event-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #b60000;
+  }
+  .event-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  .event-description {
+    font-size: 1rem;
+    color: #333;
+  }
+</style>
+
+<Layout> 
+<div class="events-container">
+  <h1>{title}</h1>
+
+  <section>
+    <h2>Future Events</h2>
+    <div class="event-list">
+      <div class="event-card">
+        <div class="event-title">GCAA Retreat</div>
+        <div class="event-date">June 15, 2024</div>
+        <div class="event-description">
+          Gamma Chapter Alumni Association's annual retreat for networking and planning.
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-title">NAKLAND</div>
+        <div class="event-date">April 14,2026</div>
+        <div class="event-description">
+          A series of workshops focused on professional development and skill-building.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Past Events</h2>
+    <div class="event-list">
+      <div class="event-card">
+        <div class="event-title">Warrios VS Sacramento Kings</div>
+        <div class="event-date">February 22, 2024</div>
+        <div class="event-description">
+          A night of basketball excitement with our alumni and current members.
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-title">NAK Bro Breakfast</div>
+        <div class="event-date">June 29, 2025</div>
+        <div class="event-description">
+          A successful breakfast event with our alumni and current members.
+        </div>
+      </div>
+    </div>
+  </section>
+  <button onclick="window.location.href='/'" style="display: block; margin: 2rem auto; padding: 0.75rem 1.5rem; font-size: 1rem; background-color: #b60000; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    Back to Home
+  </button>
+</div>
+</Layout>

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const members = [
+  { name: 'Manny Rodriguez', title: 'President' },
+  { name: 'Luis Valencia', title: 'Vice President' },
+  { name: 'Botello Johnson', title: 'Secretary' },
+  { name: 'Botello Brown', title: 'Treasurer' },
+  { name: 'Carol White', title: 'Event Coordinator' },
+  { name: 'David Black', title: 'Membership Chair' },
+  { name: 'Oscar Landa', title: 'Webmaster' },
+  { name: 'Frank Blue', title: 'Historian' }
+];
+
+---
+<style>
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+  .member-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .member-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .member-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .member-title {
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
+
+<Layout>
+<body>
+  <h1 style="text-align: center;">Gamma Chapter Alumni Members</h1>
+  <ul class="members-grid">
+    {members.map(member => (
+      <li class="member-card">
+        <div class="member-name">{member.name}</div>
+        <div class="member-title">{member.title}</div>
+      </li>
+    ))}
+  </ul>
+</body>
+</Layout>
