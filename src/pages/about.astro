@@ -1,60 +1,70 @@
 ---
-
-import AboutLayout from '../layouts/AboutLayout.astro';
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<AboutLayout>
-
-
-  <h1>Our Foundation</h1>
-  <h2>Mission</h2>
+<Layout>
+  <h2 id="about-title">About GCAA</h2>
   <p>
     The Gamma Chapter Alumni Association is a non-profit organization that
     serves as a support system for our undergraduate brothers. We are committed
     to the development of our members and the community at large.
-
-    <p>
-      The G.C.A.A. fundamental objective; is to advocate and provide positive
-      development for our brothers. This we pledge to our active chapter
-      brothers, our alumni brothers. To push our brothers to be the best they
-      can be, and to help them achieve their goals. The G.C.A.A. pledges itself
-      to this development in the specific areas of academia, cultural awareness,
-      and selfless contributions to our brothers as well as our local
-      communities.
-    </p>
-    <h2>Cultural Awareness</h2>
-    <p>
-      G.C.A.A is motivated to inspire others through the essential belief that
-      one cannot move forward successfully, unless we reconcile the meaning of
-      our past. To this end, the G.C.A.A. devotes its resources and efforts to
-      exposing youth, young adults, and its brothers to the unique values and
-      beliefs of our culture. It will also strive to promote the inherent beauty
-      of all cultures through our faith in the concept of acceptance and empower
-      others with the confidence that comes with knowing who you are.
-    </p>
-    <h2>Education</h2>
-    <p>
-      Focusing on education, the G.C.A.A. desires to coordinate academic
-      activities and exploratory events for all the current undergraduate active
-      members of the Gamma Chapter. The G.C.A.A. plans to prepare and assist the
-      undergraduate active members who are attending a community college or
-      university, by but not limited to financial assistance (a scholarship),
-      developing their professional skills (workshops), or giving back to their
-      community (community services/cultural events).
-    </p>
-
-    <h2>Brotherhood</h2>
-    <p>
-      In emphasizing brotherhood, we welcome all prospective brothers
-      with open arms. Educational and social upward mobility cannot always be
-      accomplished without the loving support of our families. As a result, the
-      G.C.A.A. believes that a fraternal environment is the most apt and
-      successful in accomplishing true transformation. It is for this reason
-      that all G.C.A.A. activities and events revolve around solid support,
-      family virtues, and our NAK pillars. With this fraternal bond, the
-      G.C.A.A. is convinced that we can achieve success in anything we set our
-      minds to.
-    </p>
   </p>
-</AboutLayout>
+  <div class="about-flex-container">
+    <!-- <div class="about-image">
+      <img src="/src/assets/mission.jpg" alt="Mission Image" />
+    </div> -->
+    <div class="section-text">
+      <div class="section-block">
+        <h2><span class="icon mission-icon"></span> Mission</h2>
+        <p>
+          The G.C.A.A. fundamental objective; is to advocate and provide
+          positive development for our brothers. This we pledge to our active
+          chapter brothers, our alumni brothers. To push our brothers to be the
+          best they can be, and to help them achieve their goals. The G.C.A.A.
+          pledges itself to this development in the specific areas of academia,
+          cultural awareness, and selfless contributions to our brothers as well
+          as our local communities.
+        </p>
+      </div>
+      <div class="section-block">
+        <h2><span class="icon culture-icon"></span> Cultural Awareness</h2>
+        <p>
+          G.C.A.A is motivated to inspire others through the essential belief
+          that one cannot move forward successfully, unless we reconcile the
+          meaning of our past. To this end, the G.C.A.A. devotes its resources
+          and efforts to exposing youth, young adults, and its brothers to the
+          unique values and beliefs of our culture. It will also strive to
+          promote the inherent beauty of all cultures through our faith in the
+          concept of acceptance and empower others with the confidence that
+          comes with knowing who you are.
+        </p>
+      </div>
+      <div class="section-block">
+        <h2><span class="icon education-icon"></span> Education</h2>
+        <p>
+          Focusing on education, the G.C.A.A. desires to coordinate academic
+          activities and exploratory events for all the current undergraduate
+          active members of the Gamma Chapter. The G.C.A.A. plans to prepare and
+          assist the undergraduate active members who are attending a community
+          college or university, by but not limited to financial assistance (a
+          scholarship), developing their professional skills (workshops), or
+          giving back to their community (community services/cultural events).
+        </p>
+      </div>
+      <div class="section-block">
+        <h2><span class="icon brotherhood-icon"></span> Brotherhood</h2>
+        <p>
+          In emphasizing brotherhood, we welcome all prospective brothers with
+          open arms. Educational and social upward mobility cannot always be
+          accomplished without the loving support of our families. As a result,
+          the G.C.A.A. believes that a fraternal environment is the most apt and
+          successful in accomplishing true transformation. It is for this reason
+          that all G.C.A.A. activities and events revolve around solid support,
+          family virtues, and our NAK pillars. With this fraternal bond, the
+          G.C.A.A. is convinced that we can achieve success in anything we set
+          our minds to.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
